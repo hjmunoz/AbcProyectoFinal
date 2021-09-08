@@ -22,8 +22,8 @@ public class Conexion {
         
         //Valores para conexion
         driver = "com.mysql.cj.jdbc.Driver";
-        usuario = "root";
-        clave = "";
+        usuario = "abcadmin";
+        clave = "AbcEducando123";
         bd = "abceducando2";
         urlBd = "jdbc:mysql://localhost:3306/" + bd +"?useTimezone=true&serverTimezone=UTC";
 
