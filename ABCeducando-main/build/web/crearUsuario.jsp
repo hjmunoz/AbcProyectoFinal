@@ -144,7 +144,7 @@
                                                                 <div class="col-lg-12">
                                                                     <div class="payment-adress">
                                                                         <input type="hidden" value="2" name="opcion">
-                                                                        <button type="submit" class="btn btn-primary waves-effect waves-light">Registrar</button>
+                                                                        <button type="submit" class="btn btn-primary waves-effect waves-light">Siguiente</button>
                                                                     </div>
                                                                 </div>
                                                             </div>

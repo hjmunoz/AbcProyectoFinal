@@ -104,7 +104,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="product-payment-inner-st">
                                 <ul id="myTabedu1" class="tab-review-design">
-                                    <li class="active"><a href="#description" style="text-align: center;">Asignar contraseña</a></li>
+                                    <li class="active"><a href="#description" style="text-align: center;">Fecha de ingreso</a></li>
                                         <%
                                             int idDatos = 0;
 
@@ -133,6 +133,7 @@
                                                                         <input name="textfechasalida" type="date" class="form-control" placeholder="contraseña">
                                                                         <input type="hidden" value="<%=idDatos%>" placeholder="" name="textdocumentoid"><br><br> 
                                                                     </div>  
+                                                                    <label>Rol</label>
                                                                     <select class="form-control" name="textrol">
                                                                         <option>Seleccione...</option>
                                                                         <option value="1">administrador</option>
@@ -147,7 +148,7 @@
                                                                     <div class="payment-adress">
                                                                         <input type="hidden" value="1" name="opcion">
                                                                         <button type="submit" class="btn btn-primary waves-effect waves-light">Registrar</button>
-                                                                    </div>
+                                                                    </div><br>
                                                                 </div>
                                                             </div>
                                                         </form>

@@ -20,7 +20,6 @@ public class EstudianteDAO extends Conexion implements Crud {
     private ResultSet mensajero;
     private boolean operacion = false, validar;
     private Statement st;
-    
 
     // datos de las tabla Actividad Cargada
     private int DocenteId;
@@ -29,7 +28,7 @@ public class EstudianteDAO extends Conexion implements Crud {
     // tabla Actividad entregada 
     private int ActividadEntregadaId, idActividadCargada, calificacion;
     private String ActividadEntregadaRuta, EstudianteId, ActividadEntregadaEstado;
-    
+
     private boolean comparacion;
 
     public EstudianteDAO() {
@@ -81,7 +80,6 @@ public class EstudianteDAO extends Conexion implements Crud {
             puente.setString(1, EstudianteId);
             puente.setInt(2, idActividadCargada);
             puente.setString(3, ActividadEntregadaRuta);
-            
 
             puente.executeUpdate();
             operacion = true;
@@ -102,7 +100,7 @@ public class EstudianteDAO extends Conexion implements Crud {
         return operacion;
     }
 
-      public ArrayList<ActividadEntregadaVO> listarActivadesEntregadas(String idEstudiante) {
+    public ArrayList<ActividadEntregadaVO> listarActivadesEntregadas(String idEstudiante) {
 
         ActividadEntregadaVO actiE = null;
         ArrayList<ActividadEntregadaVO> listaActi = new ArrayList<>();
@@ -112,7 +110,7 @@ public class EstudianteDAO extends Conexion implements Crud {
             sql = "SELECT ActividadEntregadaId,idActividadCargada,Calificacion,ActividadEntregadaRuta,ActividadEntregadaEstado FROM ActividadEntregada where ActividadEntregada.EstudianteId =?";
             puente = conexion.prepareStatement(sql);
             puente.setString(1, idEstudiante);
-              mensajero = puente.executeQuery();
+            mensajero = puente.executeQuery();
 
             while (mensajero.next()) {
                 actiE = new ActividadEntregadaVO(
@@ -140,15 +138,20 @@ public class EstudianteDAO extends Conexion implements Crud {
         return listaActi;
 
     }
-      
-      
-       public ArrayList<ActividadEntregadaVO> listarNotas(String idEstudiante) {
+
+    public ArrayList<ActividadEntregadaVO> listarNotas(String idEstudiante) {
 
         ActividadEntregadaVO actiC = null;
         ArrayList<ActividadEntregadaVO> listaActi = new ArrayList<>();
+        ActividadCargadaVO actiCe = null;
+        ArrayList<ActividadCargadaVO> listaAct = new ArrayList<>();
 
         try {
             conexion = this.obtenerConexion();
+//            sql = "SELECT ActividadCargadaDescripcion, Calificacion, ActividadEntregadaEstado FROM actividadentregada\n"
+//                    + "inner join actividadcargada\n"
+//                    + "on idActividadCargada = ActividadCargadaId\n"
+//                    + "where EstudianteId = ?";
             sql = "SELECT ActividadEntregadaId, idActividadCargada,Calificacion,ActividadEntregadaEstado FROM ActividadEntregada WHERE EstudianteId =?  ";
             puente = conexion.prepareStatement(sql);
             puente.setString(1, idEstudiante);
@@ -160,9 +163,12 @@ public class EstudianteDAO extends Conexion implements Crud {
                         mensajero.getInt(2),
                         mensajero.getInt(3),
                         mensajero.getString(4)
-                        
-                        
                 );
+//                actiCe = new ActividadCargadaVO(
+//                        mensajero.getString(1),
+//                        mensajero.getInt(2),
+//                        mensajero.getString(3)
+//                );
                 listaActi.add(actiC);
 
             }
@@ -181,6 +187,7 @@ public class EstudianteDAO extends Conexion implements Crud {
         return listaActi;
 
     }
+
     public ArrayList<ActividadCargadaVO> listarActivadesPendientes(String Estudianteid) {
 
         ActividadCargadaVO actiC = null;
@@ -223,32 +230,29 @@ public class EstudianteDAO extends Conexion implements Crud {
 
             for (int i = 0; i < listaActi.size(); i++) {
                 idActividadCargada = listaActi.get(i).getActividadCargadaId();
-            
-           int j =0;
-                if(listaEntrega.isEmpty()){
-                     pendientes.add(listaActi.get(i));
-            }
-               
-                while(j < listaEntrega.size()  ){
-                    
-            int actividad  =  listaEntrega.get(j).getIdActividadCargada();
-                    
-                 if( idActividadCargada != actividad){
-                     
-                     if(i==j){
-                     pendientes.add(listaActi.get(i));
-                     }else if(listaEntrega.size() != listaActi.size()){
-                      pendientes.add(listaActi.get(i));
-                     }
-                   }
-                 
-                 j++;
+
+                int j = 0;
+                if (listaEntrega.isEmpty()) {
+                    pendientes.add(listaActi.get(i));
                 }
-             
-                
+
+                while (j < listaEntrega.size()) {
+
+                    int actividad = listaEntrega.get(j).getIdActividadCargada();
+
+                    if (idActividadCargada != actividad) {
+
+                        if (i == j) {
+                            pendientes.add(listaActi.get(i));
+                        } else if (listaEntrega.size() != listaActi.size()) {
+                            pendientes.add(listaActi.get(i));
+                        }
+                    }
+
+                    j++;
+                }
+
             }
-            
-           
 
         } catch (SQLException e) {
             Logger.getLogger(DocenteDAO.class.getName()).log(Level.SEVERE, null, e);

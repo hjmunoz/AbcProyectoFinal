@@ -155,9 +155,7 @@
                                 <input value="9" name="opcion" type="hidden"><br>
                                 <div class="row">
                                     <div class="col-lg-2"></div>
-                                    <div class="col-lg-4">
-                                        <input type="submit" value="Actualizar Usuario"  id="btn" class="btn btn-primary waves-effect waves-light"/>
-                                    </div>
+                                    
                                     <div class="col-lg-4"></div>
                                 </div>
                             </form>
