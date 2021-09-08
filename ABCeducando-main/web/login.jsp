@@ -54,7 +54,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
-						<input class="input100" type="password" name="textclave" placeholder="Contraseña" required="">
+                                            <input class="input100" type="password" name="textclave" placeholder="Contraseña" required title="Contraseña incorrecta" pattern="[A-Za-z0-9!?-]{4,8}">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<span class="lnr lnr-lock"></span>

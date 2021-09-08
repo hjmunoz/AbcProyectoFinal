@@ -140,7 +140,7 @@
                                                                         <option value="2">estudiante</option>
                                                                         <option value="3">docente</option>
                                                                         <option value="4">acudiente</option>
-                                                                    </select>
+                                                                    </select><br>
                                                                 </div>                                                                
                                                             </div>
                                                             <div class="row">

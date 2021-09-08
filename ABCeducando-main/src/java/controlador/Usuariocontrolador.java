@@ -154,7 +154,7 @@ public class Usuariocontrolador extends HttpServlet {
                     }
 
                 } else {
-                    request.getRequestDispatcher("crear_usuario.jsp").forward(request, response);
+                    request.getRequestDispatcher("crearUsuario.jsp").forward(request, response);
                     request.setAttribute("mensajeError", "¡El usuario no se registro correctamente!");
 
                 }
@@ -187,7 +187,7 @@ public class Usuariocontrolador extends HttpServlet {
 
                 } else {
                     request.setAttribute("mensajeError", "¡El archivo no se almaceno correctamente!");
-                    request.getRequestDispatcher("registrar_matricula.jsp").forward(request, response);
+                    request.getRequestDispatcher("registrarMatricula.jsp").forward(request, response);
                 }
 
                 break;

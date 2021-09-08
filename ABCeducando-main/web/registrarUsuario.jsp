@@ -123,14 +123,14 @@
                                                                     <div class="form-group" id="grupo__nombre">
                                                                         <label class="formulario__label">Nombre</label>
                                                                         <div class="formulario__grupo-input">
-                                                                            <input name="textnombres" type="text" class="form-control" placeholder="Nombre" style="border: solid 1px;">   
+                                                                            <input name="textnombres" type="text" title="Nombre invalido" class="form-control" placeholder="Nombre" style="border: solid 1px;" pattern="[A-Za-z]{2,15}" required>   
                                                                             <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guion bajo.</p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-group" id="grupo__apellido">
                                                                         <label class="formulario__label">Apellido</label>
                                                                         <div class="formulario__grupo-input">
-                                                                            <input name="textapellidos" type="text" class="form-control" placeholder="Apellido">
+                                                                            <input name="textapellidos" type="text" class="form-control" title="Apellido invalido" placeholder="Apellido" required="" pattern="[A-Za-z]{2,15}">
                                                                             <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guion bajo.</p>
 
                                                                         </div>
@@ -138,8 +138,7 @@
                                                                     <div class="form-group" id="grupo_tipoid">
                                                                         <label class="formulario__label">Tipo de documento</label><br>
                                                                         <div class="formulario__grupo-input">
-                                                                            <select required class="form-control" pattern=""  name="texttipoid">
-                                                                                <option>Seleccione...</option>
+                                                                            <select required="" class="form-control" pattern=""  name="texttipoid">
                                                                                 <option value="Registro civil">Registro civil</option>
                                                                                 <option value="Tarjeta de identidad">Tarjeta de identidad</option>
                                                                                 <option value="Cedula de ciudadania">Cedula de ciudadanía</option>
@@ -152,7 +151,6 @@
                                                                         <label class="formulario__label">EPS</label>  
                                                                         <div class="formulario__grupo-input">
                                                                             <select required class="form-control" name="eps">
-                                                                                <option>Seleccione...Eps</option>
                                                                                 <option value="sanitas">Sanitas</option>
                                                                                 <option value="compensar">Compensar</option>
                                                                                 <option value="Salud Total"> Salud Total</option>
@@ -167,28 +165,28 @@
                                                                     <div class="form-group" id="grupo__numero">
                                                                         <label class="formulario__label">Numero documento</label> 
                                                                         <div class="formulario__grupo-input">
-                                                                            <input name="textnumeroid" id="postcode" type="text" class="form-control" placeholder="N° Documento">
+                                                                            <input name="textnumeroid" id="postcode" type="text" class="form-control" title="Digite el numero de documento sin puntos ni comas" placeholder="N° Documento" required="" pattern="[0-9]{4,15}">
                                                                             <p class="formulario__input-error">Digite su numero de documento sin puntos, letras ni caracteres especiales.</p>
                                                                         </div>
                                                                     </div> 
                                                                     <div class="form-group" id="grupo__telefono">
                                                                         <label class="formulario__label">Teléfono</label>
                                                                         <div class="formulario__grupo-input">
-                                                                            <input name="texttelefono" id="postcode" type="text" class="form-control" placeholder="Telefono">
+                                                                            <input name="texttelefono" id="postcode" type="text" class="form-control" placeholder="Telefono" required="" pattern="[0-9]{4,15}" title="Digite el numero de telefono sin guiones, puntos ni comas">
                                                                             <p class="formulario__input-error">Digite su numero de teléfono sin puntos, letras ni caracteres especiales.</p>
                                                                         </div>
                                                                     </div> 
                                                                     <div class="form-group" id="grupo__correo">
                                                                         <label class="formulario__label">Email</label>
                                                                         <div class="formulario__grupo-input">
-                                                                            <input name="textemail" id="postcode" type="text" class="form-control" placeholder="Email">
+                                                                            <input name="textemail" id="postcode" type="text" class="form-control" title="Correo electronico invalido" placeholder="Email" required="" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
                                                                             <p class="formulario__input-error">Correo invalido</p>
                                                                         </div>
                                                                     </div> 
                                                                     <div class="form-group" id="grupo__fecha">
                                                                         <label class="formulario__label">Fecha de nacimiento</label>
                                                                         <div class="formulario__grupo-input">
-                                                                            <input name="textfechanacimiento" id="postcode" type="date" class="form-control" placeholder="Fecha de nacimiento">
+                                                                            <input name="textfechanacimiento" id="postcode" type="date" class="form-control" placeholder="Fecha de nacimiento" required="" pattern="[0-9]{4,15}">
                                                                             <p class="formulario__input-error">Fecha invalida</p>
                                                                         </div>
                                                                     </div> 
@@ -222,7 +220,6 @@
         </div>
 
         <%@include file="Componentes/Administrativo/js.jsp" %>
-        <script src="js/validacionCampos.js"></script>
 
     </body>
 

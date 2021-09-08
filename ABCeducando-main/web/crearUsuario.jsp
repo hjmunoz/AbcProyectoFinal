@@ -135,8 +135,8 @@
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label>Contraseña</label>
-                                                                        <input name="clave" type="text" class="form-control" placeholder="contraseña">
-                                                                        <input type="hidden" placeholder="Escriba numero de documento aqui" name="textnumeroid" value="<%=idDatos%>" required><br><br>
+                                                                        <input name="clave" type="text" class="form-control" placeholder="contraseña" required="" pattern="[A-Za-z0-9!?-]{4,8}">
+                                                                        <input type="hidden" placeholder="Escriba numero de documento aqui" name="textnumeroid" value="<%=idDatos%>" ><br><br>
                                                                     </div>                                                                                                                                                                                                           
                                                                 </div>                                                                
                                                             </div>
