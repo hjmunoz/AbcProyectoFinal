@@ -136,7 +136,7 @@
                                                 <tr>
                                                     <th data-field="state" data-checkbox="true"></th>
                                                     <th data-field="id">Nombre</th>
-                                                    <th data-field="name" data-editable="true">Descripcion</th>
+                                                    <th data-field="name" data-editable="true">Descripción</th>
                                                     <th data-field="email" data-editable="true">Archivo</th>
                                                     <th data-field="phone" data-editable="true">Acciones</th>                                                   
                                                 </tr>

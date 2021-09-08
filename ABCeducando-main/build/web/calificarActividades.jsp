@@ -108,10 +108,10 @@
                                                 <tr>
                                                     <th data-field="state" data-checkbox="true"></th>
                                                     <th data-field="id">Archivo</th>
-                                                    <th data-field="name" data-editable="true">Calificacion</th>
+                                                    <th data-field="name" data-editable="true">Calificación</th>
                                                     <th data-field="email" data-editable="true">Estado</th>
                                                     <th data-field="phone" data-editable="true">Estudiante</th>
-                                                    <th data-field="phone" data-editable="true">Accion</th>
+                                                    <th data-field="phone" data-editable="true">Acción</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -148,7 +148,7 @@
                                                             <input type="hidden" name="idAcrividad" value="<%=datosVO.getActividadEntregadaId()%>"/>
                                                             <input type="hidden" name="estado" value="calificado"/>
                                                             <select name="calificacion" id="cars">
-                                                                <option>seleccione Calificacion</option>
+                                                                <option>seleccione Calificación</option>
                                                                 <option value="1">1</option>
                                                                 <option value="2">2</option>
                                                                 <option value="3">3</option>

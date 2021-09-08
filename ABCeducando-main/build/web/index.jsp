@@ -248,9 +248,9 @@
                                     ABC Educando, Aliado para docentes y estudiantes
                                 </h4>
                                 <p class="text" >
-                                    ABC Educando es una plataforma educativa que le facilitara el trabajo a la institucion, los estudiantes y los docentes,
-                                    las herramientas con las que cuenta seran de mucha utilidad para la gestion de la informacion de estudiantes y docentes 
-                                    podremos cargar y entregar actividades de una manera facil he intuitiva.</p><br><br><br>
+                                    ABC Educando es una plataforma educativa que le facilitara el trabajo a la institución, los estudiantes y los docentes,
+                                    las herramientas con las que cuenta serán de mucha utilidad para la gestión de la información de estudiantes y docentes 
+                                    podremos cargar y entregar actividades de una manera fácil he intuitiva.</p><br><br><br>
 
                                     
                                 
@@ -734,7 +734,7 @@
                     <div class="col-lg-6">
                         <div class="section-title text-center pb-20">
                             <h3 class="title">
-                                ¡Contactanos!
+                                ¡Contáctanos!
                             </h3>
                             <p class="text">
                                 ¡Estaremos atentos a responderte!
@@ -828,7 +828,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="footer-link">
                                 <h6 class="footer-title">
-                                    Compañia
+                                    Compañía
                                 </h6>
                                 <ul>
                                     <li>
@@ -858,7 +858,7 @@
                                 <ul>
                                     <li>
                                         <a href="#">
-                                            Facilidades de servico
+                                            Facilidades de servicio
                                         </a>
                                     </li>
                                     <li>

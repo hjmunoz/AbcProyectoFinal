@@ -109,7 +109,7 @@
                                                         <div class="m icon-box">
                                                             <i class="educate-icon educate-miscellanous"></i>
                                                         </div>
-                                                        <label for="id">Descripcion: </label><br>
+                                                        <label for="id">Descripción: </label><br>
                                                         <input type="text" name="descripcion" style="border: solid 1px;" /><br><br>   
                                                         <button style="background: #1f97d4" class="btn btn-success widget-btn-1 btn-sm"><input type="file" name="urlArchivo"  accept="application/pdf" class="btn1"/></button>
                                                         <br><br>                                

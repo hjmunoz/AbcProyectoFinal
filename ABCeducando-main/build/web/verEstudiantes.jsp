@@ -134,7 +134,7 @@
                                                     <th data-field="name" data-editable="true">Tipo Documento</th>
                                                     <th data-field="email" data-editable="true">Nombre</th>
                                                     <th data-field="phone" data-editable="true">Apellido</th>
-                                                    <th data-field="complete">Telefono</th>
+                                                    <th data-field="complete">Teléfono</th>
                                                     <th data-field="task" data-editable="true">Email</th>
                                                     
 

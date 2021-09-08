@@ -144,7 +144,7 @@
                                 <label style="width: 500px;" class="form-control"><%=usu.getNombre()%></label>
                                 <label class="formulario__label" for="apellidos">Apellidos</label>
                                 <label style="width: 500px;" class="form-control"><%=usu.getApellidos()%></label>
-                                <label class="formulario__label" >Telefono</label>
+                                <label class="formulario__label" >Teléfono</label>
                                 <label style="width: 500px;" class="form-control"><%=usu.getTelefono()%></label>
                                 <input type="hidden"  name="rol" value="<%=usu.getNombrerol()%>" required>
                                 <label class="formulario__label">Email</label>

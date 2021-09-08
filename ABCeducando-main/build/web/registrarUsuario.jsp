@@ -124,14 +124,14 @@
                                                                         <label class="formulario__label">Nombre</label>
                                                                         <div class="formulario__grupo-input">
                                                                             <input name="textnombres" type="text" class="form-control" placeholder="Nombre" style="border: solid 1px;">   
-                                                                            <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                                                                            <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guion bajo.</p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-group" id="grupo__apellido">
                                                                         <label class="formulario__label">Apellido</label>
                                                                         <div class="formulario__grupo-input">
                                                                             <input name="textapellidos" type="text" class="form-control" placeholder="Apellido">
-                                                                            <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                                                                            <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guion bajo.</p>
 
                                                                         </div>
                                                                     </div>
@@ -142,9 +142,9 @@
                                                                                 <option>Seleccione...</option>
                                                                                 <option value="Registro civil">Registro civil</option>
                                                                                 <option value="Tarjeta de identidad">Tarjeta de identidad</option>
-                                                                                <option value="Cedula de ciudadania">Cedula de ciudadania</option>
+                                                                                <option value="Cedula de ciudadania">Cedula de ciudadanía</option>
                                                                             </select> 
-                                                                            <p class="formulario__input-error">El tipo de documento tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                                                                            <p class="formulario__input-error">El tipo de documento tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guion bajo.</p>
 
                                                                         </div>
                                                                     </div>
@@ -159,7 +159,7 @@
                                                                                 <option value="Salud Total">Nueva Eps</option>
                                                                                 <option value="Salud Total">Famisanar</option>
                                                                             </select>
-                                                                            <p class="formulario__input-error">El tipo de documento tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                                                                            <p class="formulario__input-error">El tipo de documento tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guion bajo.</p>
                                                                         </div>                                                                            
                                                                     </div>                                                                    
                                                                 </div>
@@ -172,10 +172,10 @@
                                                                         </div>
                                                                     </div> 
                                                                     <div class="form-group" id="grupo__telefono">
-                                                                        <label class="formulario__label">Telefono</label>
+                                                                        <label class="formulario__label">Teléfono</label>
                                                                         <div class="formulario__grupo-input">
                                                                             <input name="texttelefono" id="postcode" type="text" class="form-control" placeholder="Telefono">
-                                                                            <p class="formulario__input-error">Digite su numero de telefono sin puntos, letras ni caracteres especiales.</p>
+                                                                            <p class="formulario__input-error">Digite su numero de teléfono sin puntos, letras ni caracteres especiales.</p>
                                                                         </div>
                                                                     </div> 
                                                                     <div class="form-group" id="grupo__correo">
