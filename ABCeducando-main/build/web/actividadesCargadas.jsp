@@ -61,7 +61,6 @@
                                                 <ul class="nav navbar-nav mai-top-nav header-right-menu">
                                                     <li class="nav-item dropdown">
                                                         <a href="crearmensaje.jsp" class="nav-link dropdown-toggle">
-                                                            <i class="educate-icon educate-message edu-chat-pro" aria-hidden="true"></i>                                                            
                                                         </a>
                                                     </li> 
                                                     <%int idEstudiante = 0;
@@ -84,11 +83,11 @@
                                                             <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
                                                         </a>
                                                         <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                            <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>Mi Perfil</a>
+                                                            <li><a href="perfilDocente.jsp"><span class="edu-icon edu-home-admin author-log-ic"></span>Mi Perfil</a>
                                                             </li>
-                                                            <li><a href="#"><span class="edu-icon edu-user-rounded author-log-ic"></span>Actualizar Datos</a>
+                                                            <li><a href="../actualizarD.jsp"><span class="edu-icon edu-user-rounded author-log-ic"></span>Actualizar Datos</a>
                                                             </li>
-                                                            <li><a href="#"><span class="edu-icon edu-money author-log-ic"></span>Cerrar Sesion</a>
+                                                            <li><a href="login.jsp"><span class="edu-icon edu-money author-log-ic"></span>Cerrar Sesion</a>
                                                             </li>                                                            
                                                         </ul>
                                                     </li>
@@ -125,7 +124,7 @@
                             <div class="sparkline13-list">
                                 <div class="sparkline13-hd">
                                     <div class="main-sparkline13-hd">
-                                        <h1>Estudiantes</h1>
+                                        <h1>Actividades Cargadas</h1>
                                     </div>
                                 </div>
                                 <div class="sparkline13-graph">

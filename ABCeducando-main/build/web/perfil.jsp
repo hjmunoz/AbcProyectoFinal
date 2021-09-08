@@ -76,7 +76,7 @@
                                                                 <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
                                                             </a>
                                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                                <li><a href="perfil.jsp"><span class="edu-icon edu-home-admin author-log-ic"></span>Mi perfil</a>
+                                                                <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>Mi perfil</a>
                                                                 </li>
                                                                 <li><a href="../actualizarU.jsp"><span class="edu-icon edu-user-rounded author-log-ic"></span>Actualizar datos</a>
                                                                 </li>
@@ -126,10 +126,9 @@
         <div class="col-lg-2"></div>
         <section class="container-fluid">
             <div class="row">
-                <div class="col-lg-4"></div>
-                <div class="col-xl-4">
+                <div class="col-lg-5"></div>
+                <div class="col-xl-3">
                     <div class="registrodocente">
-                        <h1>Actualizar Usuario</h1>                                          
                     </div>
                 </div>
                 <div class="col-lg-4"></div>
@@ -143,26 +142,16 @@
                         <div class="col-lg-2">
                             <form class="container  align-content-center" action="Usuario" method="post">       
                                 <label class="formulario__label" for="numeroDocumento">Numero Documento</label>
-                                <input style="width: 500px;" class="form-control" type="text"  name="textnumeroid" value="<%=usu.getUsuarioid()%>">
-                                <br>
-                                <label>Tipo Documento</label><br>
-                                <select style="width: 500px;" class="form-control" name="texttipoid">
-                                    <option>Seleccione...</option>
-                                    <option value="Registro civil">RC</option>
-                                    <option value="Tarjeta de identidad">TI</option>
-                                    <option value="Cedula de ciudadania">CC</option>
-                                </select><br>
+                                <label style="width: 500px;" class="form-control"><%=usu.getUsuarioid()%></label>                                                          
                                 <label class="formulario__label">Nombres</label>
-                                <input style="width: 500px;" class="form-control" type="text"  name="textnombres" value="<%=usu.getNombre()%>" required><br>
+                                <label style="width: 500px;" class="form-control"><%=usu.getNombre()%></label>
                                 <label class="formulario__label" for="apellidos">Apellidos</label>
-                                <input style="width: 500px;" class="form-control" type="text"  name="textapellidos" value="<%=usu.getApellidos()%>" required><br>                            
+                                <label style="width: 500px;" class="form-control"><%=usu.getApellidos()%></label>
                                 <label class="formulario__label" >Telefono</label>
-                                <input style="width: 500px;" class="form-control" type="text"  name="texttelefono" value="<%=usu.getTelefono()%>" required>
-                                <input type="hidden"  name="rol" value="<%=usu.getNombrerol()%>" required><br>
+                                <label style="width: 500px;" class="form-control"><%=usu.getTelefono()%></label>
+                                <input type="hidden"  name="rol" value="<%=usu.getNombrerol()%>" required>
                                 <label class="formulario__label">Email</label>
-                                <input style="width: 500px;" class="form-control" type="email"  name="textemail"  value="<%=usu.getEmail()%>" required><br>
-                                <label class="formulario__label">clave</label>
-                                <input style="width: 500px;" class="form-control" type="password"  name="clave"  value="" required><br>
+                                <label style="width: 500px;" class="form-control"><%=usu.getEmail()%></label>
                                 <input value="9" name="opcion" type="hidden"><br>
                                 <div class="row">
                                     <div class="col-lg-2"></div>

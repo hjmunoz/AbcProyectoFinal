@@ -74,9 +74,9 @@
                                             <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
                                         </a>
                                         <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                            <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>Mi perfil</a>
+                                            <li><a href="perfilEstudiante.jsp"><span class="edu-icon edu-home-admin author-log-ic"></span>Mi perfil</a>
                                             </li>
-                                            <li><a href="../actualizarU.jsp"><span class="edu-icon edu-user-rounded author-log-ic"></span>Actualizar datos</a>
+                                            <li><a href="../actualizarE.jsp"><span class="edu-icon edu-user-rounded author-log-ic"></span>Actualizar datos</a>
                                             </li>
                                             <li><a href="login.jsp"><span class="edu-icon edu-money author-log-ic"></span>Cerrar sesión</a>
                                             </li>

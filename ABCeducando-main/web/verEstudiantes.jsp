@@ -78,9 +78,9 @@
                                                             <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
                                                         </a>
                                                         <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                            <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>Mi Perfil</a>
+                                                            <li><a href="perfil.jsp"><span class="edu-icon edu-home-admin author-log-ic"></span>Mi Perfil</a>
                                                             </li>
-                                                            <li><a href="#"><span class="edu-icon edu-user-rounded author-log-ic"></span>Actualizar Datos</a>
+                                                            <li><a href="actualizarU.jsp"><span class="edu-icon edu-user-rounded author-log-ic"></span>Actualizar Datos</a>
                                                             </li>
                                                             <li><a href="login.jsp"><span class="edu-icon edu-money author-log-ic"></span>Cerrar Sesion</a>
                                                             </li>                                                            
@@ -129,15 +129,14 @@
                                                data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                                             <thead>
                                                 <tr>
-                                                    <th data-field="state" data-checkbox="true"></th>
+                                                    
                                                     <th data-field="id">Numero Documento</th>
                                                     <th data-field="name" data-editable="true">Tipo Documento</th>
                                                     <th data-field="email" data-editable="true">Nombre</th>
                                                     <th data-field="phone" data-editable="true">Apellido</th>
                                                     <th data-field="complete">Telefono</th>
                                                     <th data-field="task" data-editable="true">Email</th>
-                                                    <th data-field="date" data-editable="true">EPS</th>
-                                                    <th data-field="price" data-editable="">Acciones</th>
+                                                    
 
                                                 </tr>
                                             </thead>
@@ -151,15 +150,15 @@
                                                         datosVO = listadocentes.get(i);
                                                 %>
                                                 <tr>
-                                                    <td></td>
+                                                   
                                                     <td><%=datosVO.getIdDatos()%></td>
                                                     <td><%=datosVO.getDatostipoid()%></td>
                                                     <td><%=datosVO.getDatosnombres()%></td>
                                                     <td><%=datosVO.getDatosapellidos()%></td>
                                                     <td><%=datosVO.getDatostelefono()%></td>
                                                     <td><%=datosVO.getDatosemail()%></td>
-                                                    <td><%=datosVO.getEps()%></td>                                                    
-                                                    <td>
+                                                                                                      
+                                                    
                                             <form id="crudForm"  action="Usuario" method="post">
                                                 
                                                 <input id="metodo" type="hidden" name="opcion" value="" >
@@ -172,7 +171,7 @@
                                                 <input type="hidden"  name="clave" value="<%=datosVO.getClave()%>">
                                                 
                                             </form>
-                                        </td>
+                                        
                                                 </tr>   
                                                 <%}%>
                                             </tbody>

@@ -18,15 +18,12 @@
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
 	<queryString>
-		<![CDATA[select EstudianteId, ActividadCargadaNombre, ActividadCargadaDescripcion, ActividadEntregadaEstado, Calificacion from actividadentregada
+		<![CDATA[select EstudianteId, ActividadCargadaDescripcion, ActividadEntregadaEstado, Calificacion from actividadentregada
 inner join actividadcargada
 on idActividadCargada = ActividadCargadaId
 where ActividadEntregadaEstado="calificado" and EstudianteId= $P{nombre};]]>
 	</queryString>
 	<field name="EstudianteId" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="ActividadCargadaNombre" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="ActividadCargadaDescripcion" class="java.lang.String">
@@ -74,21 +71,14 @@ where ActividadEntregadaEstado="calificado" and EstudianteId= $P{nombre};]]>
 					<textElement>
 						<font fontName="Arial" size="12" isBold="true" pdfFontName="Helvetica"/>
 					</textElement>
-					<text><![CDATA[Estudiante]]></text>
-				</staticText>
-				<staticText>
-					<reportElement style="Column header" positionType="Float" x="115" y="0" width="115" height="14" forecolor="#000000" uuid="b5c53b97-fe49-47d1-a259-57c61124267d"/>
-					<textElement>
-						<font fontName="Arial" size="12" isBold="true" pdfFontName="Helvetica"/>
-					</textElement>
-					<text><![CDATA[Actividad]]></text>
+					<text><![CDATA[Nombre Estudiante]]></text>
 				</staticText>
 				<staticText>
 					<reportElement style="Column header" positionType="Float" x="230" y="0" width="115" height="14" forecolor="#000000" uuid="6f9951dd-1233-4141-93e9-79177373972d"/>
 					<textElement>
 						<font fontName="Arial" size="12" isBold="true" pdfFontName="Helvetica"/>
 					</textElement>
-					<text><![CDATA[Descripcion actividad]]></text>
+					<text><![CDATA[Actividad]]></text>
 				</staticText>
 				<staticText>
 					<reportElement style="Column header" positionType="Float" x="345" y="0" width="115" height="14" forecolor="#000000" uuid="83e2703d-dbee-4b76-86ae-24cb78e9ad2f"/>
@@ -120,13 +110,6 @@ where ActividadEntregadaEstado="calificado" and EstudianteId= $P{nombre};]]>
 						<font fontName="Arial" size="12" isBold="false" pdfFontName="Helvetica"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{EstudianteId}]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Detail" positionType="Float" x="115" y="0" width="115" height="14" uuid="541cc198-6fd6-4237-b9da-061764b906f7"/>
-					<textElement>
-						<font fontName="Arial" size="12" isBold="false" pdfFontName="Helvetica"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$F{ActividadCargadaNombre}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 					<reportElement style="Detail" positionType="Float" x="230" y="0" width="115" height="14" uuid="a9192538-57fe-45f4-bcb9-7f86b03cf2ed"/>
