@@ -136,9 +136,9 @@
 
 
 
-        <div class="" style="display: block; ">
+        
             <%@include file="Componentes/Administrativo/footer.jsp" %>
-        </div>
+        
     </div>
 
     <%@include file="Componentes/Administrativo/js.jsp" %>
