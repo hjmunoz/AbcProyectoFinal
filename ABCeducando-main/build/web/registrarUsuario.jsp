@@ -139,6 +139,7 @@
                                                                         <label class="formulario__label">Tipo de documento</label><br>
                                                                         <div class="formulario__grupo-input">
                                                                             <select required="" class="form-control" pattern=""  name="texttipoid">
+                                                                                <option value="Registro civil">Seleccione...</option>
                                                                                 <option value="Registro civil">Registro civil</option>
                                                                                 <option value="Tarjeta de identidad">Tarjeta de identidad</option>
                                                                                 <option value="Cedula de ciudadania">Cedula de ciudadanía</option>
@@ -151,6 +152,7 @@
                                                                         <label class="formulario__label">EPS</label>  
                                                                         <div class="formulario__grupo-input">
                                                                             <select required class="form-control" name="eps">
+                                                                                <option value="Registro civil">Seleccione...</option>
                                                                                 <option value="sanitas">Sanitas</option>
                                                                                 <option value="compensar">Compensar</option>
                                                                                 <option value="Salud Total"> Salud Total</option>
@@ -177,7 +179,7 @@
                                                                         </div>
                                                                     </div> 
                                                                     <div class="form-group" id="grupo__correo">
-                                                                        <label class="formulario__label">Email</label>
+                                                                        <label class="formulario__label">Correo electrónico</label>
                                                                         <div class="formulario__grupo-input">
                                                                             <input name="textemail" id="postcode" type="text" class="form-control" title="Correo electronico invalido" placeholder="Email" required="" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
                                                                             <p class="formulario__input-error">Correo invalido</p>

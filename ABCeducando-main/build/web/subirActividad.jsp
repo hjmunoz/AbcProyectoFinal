@@ -10,6 +10,7 @@
 <%@include file="Componentes/datosUsuarioSesion.jsp" %>
 <html lang="en">
     <head>
+        
         <title>Carga de actividades</title>
         <meta name="description" content=" carga actividades de alumnos">
         <%@include file="Componentes/docente/head.jsp" %>
@@ -102,9 +103,10 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="row">                                            
                                             <div class="col-xl-4">
-                                                <div class="datospersonales">
+                                                <div class="datospersonales" dropzone="copy">
                                                     <form name="formpdf" action="Docente" method="post" enctype="multipart/form-data">
                                                         <div class="m icon-box">
                                                             <i class="educate-icon educate-miscellanous"></i>
@@ -136,6 +138,7 @@
             <%@include file="Componentes/docente/footer.jsp" %>
         </footer>
     </body>
-        <%@include file="Componentes/docente/js.jsp" %>
+    <%@include file="Componentes/docente/js.jsp" %>
+
 
 </html>

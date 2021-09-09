@@ -124,20 +124,17 @@
                                 </div>
                                 <div class="sparkline13-graph">
                                     <div class="datatable-dashv1-list custom-datatable-overright">
-
                                         <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
                                                data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                                             <thead>
                                                 <tr>
-                                                    
                                                     <th data-field="id">Numero Documento</th>
                                                     <th data-field="name" data-editable="true">Tipo Documento</th>
                                                     <th data-field="email" data-editable="true">Nombre</th>
                                                     <th data-field="phone" data-editable="true">Apellido</th>
                                                     <th data-field="complete">Teléfono</th>
                                                     <th data-field="task" data-editable="true">Email</th>
-                                                    
-
+                                                    <th data-field="price" data-editable="">Acciones</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -150,34 +147,43 @@
                                                         datosVO = listadocentes.get(i);
                                                 %>
                                                 <tr>
-                                                   
                                                     <td><%=datosVO.getIdDatos()%></td>
                                                     <td><%=datosVO.getDatostipoid()%></td>
                                                     <td><%=datosVO.getDatosnombres()%></td>
                                                     <td><%=datosVO.getDatosapellidos()%></td>
                                                     <td><%=datosVO.getDatostelefono()%></td>
                                                     <td><%=datosVO.getDatosemail()%></td>
-                                                                                                      
-                                                    
-                                            <form id="crudForm"  action="Usuario" method="post">
-                                                
-                                                <input id="metodo" type="hidden" name="opcion" value="" >
-                                             
-                                                <input type="hidden"  name="textnumeroid" value="<%=datosVO.getIdDatos()%>">
-                                                <input type="hidden"  name="textnombres" value="<%=datosVO.getDatosnombres()%>">
-                                                <input type="hidden"  name="textapellidos" value="<%=datosVO.getDatosapellidos()%>">
-                                                <input type="hidden"  name="texttelefono" value="<%=datosVO.getDatostelefono()%>">
-                                                <input type="hidden"  name="textemail" value="<%=datosVO.getDatosemail()%>">
-                                                <input type="hidden"  name="clave" value="<%=datosVO.getClave()%>">
-                                                
-                                            </form>
-                                        
+                                                    <td class="datatable-ct">
+                                                        <form id="crudForm"  action="Usuario" method="post">
+                                                            <div style="float: left">
+                                                            <input id="metodo" type="hidden" name="opcion" value="6">
+                                                            <input type="hidden"  name="textnumeroid" value="<%=datosVO.getIdDatos()%>">
+                                                            <input type="hidden"  name="textnombres" value="<%=datosVO.getDatosnombres()%>">
+                                                            <input type="hidden"  name="textapellidos" value="<%=datosVO.getDatosapellidos()%>">
+                                                            <input type="hidden"  name="texttelefono" value="<%=datosVO.getDatostelefono()%>">
+                                                            <input type="hidden"  name="textemail" value="<%=datosVO.getDatosemail()%>">
+                                                            <input type="hidden"  name="clave" value="<%=datosVO.getClave()%>">
+                                                            <button title="Editar" type="submit"  style="padding: 5px; border-radius: 5px;"><img src="img/editar.png" alt=""/></button>
+                                                            </div>
+<!--                                                            <a class="btn btn-primary" href="Usuario?opcion=6&textnumeroid=<%=datosVO.getIdDatos()%>">Editar</a>-->
+                                                        </form>
+                                                        <form id="crudForm"  action="Usuario" method="post">
+                                                            <input id="metodo" type="hidden" name="opcion" value="10">
+                                                            <input type="hidden"  name="textnumeroid" value="<%=datosVO.getIdDatos()%>">
+                                                            <input type="hidden"  name="textnombres" value="<%=datosVO.getDatosnombres()%>">
+                                                            <input type="hidden"  name="textapellidos" value="<%=datosVO.getDatosapellidos()%>">
+                                                            <input type="hidden"  name="texttelefono" value="<%=datosVO.getDatostelefono()%>">
+                                                            <input type="hidden"  name="textemail" value="<%=datosVO.getDatosemail()%>">
+                                                            <input type="hidden"  name="clave" value="<%=datosVO.getClave()%>">                                                          
+                                                            <button title="Eliminar" type="submit" style="padding: 5px; border-radius: 5px;"><img src="img/eliminar (1).png" alt=""/></button>                                                                                                                                                                                                                                                                                                         
+                                                        </form>
+                                                    </td>
                                                 </tr>   
-                                                <%}%>
+                                                <% }%>
                                             </tbody>
                                         </table>
                                     </div>
-                                </div>
+                                </div>  
                             </div>
                         </div>
                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
@@ -189,7 +195,7 @@
             <!--=====================================FOOTER===================================-->            
             <%@include file="Componentes/Administrativo/footer.jsp"%>
             <!--=====================================FOOTER===================================-->            
-
+            <script src="assets-2/js/crud/crud.js" type="text/javascript"></script>
         </div>
 
         <!--====================================JS============================================-->

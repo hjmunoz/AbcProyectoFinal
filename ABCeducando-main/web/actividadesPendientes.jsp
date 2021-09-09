@@ -110,11 +110,11 @@
                                                data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                                             <thead class="text-white" >
                                                 <tr> 
-                                                    <th>idActividad</th>
+                                                    
                                                     <th>Nombre Actividad</th>
                                                     <th>Descripcion</th>
                                                     <th>Archivo</th>
-                                                    <th>Docente ID</th>
+                                                    
                                                     <th>Accion</th>
                                                 </tr>
                                             </thead>
@@ -143,7 +143,7 @@
                                                 %>
 
                                                 <tr>
-                                                    <td><%=datosVO.getActividadCargadaId()%></td>
+                                                    
                                                     <td><%=datosVO.getActividadCargadaNombre()%></td>
                                                     <td><%=datosVO.getActividadCargadaDescripcion()%></td>
                                                     <td>
@@ -151,7 +151,7 @@
                                                         <a href="<%=datosVO.getRutaArchivo()%>" target="_blank"><img src="img/pdf.png" title="pdf"/></a>
 
                                                     </td>
-                                                    <td><%=datosVO.getDocenteId()%></td>
+                                                    
                                                     <td>
 
                                                         <form  method="post" action="Estudiante">

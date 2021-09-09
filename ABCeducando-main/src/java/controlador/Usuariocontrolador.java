@@ -234,6 +234,8 @@ public class Usuariocontrolador extends HttpServlet {
                 break;
             case 6: // redirigir con datos a vista actualizar 
 
+                int consultasid = Integer.parseInt(request.getParameter("textnumeroid")) ;
+                
                 request.setAttribute("idDatos", idDatos);
                 request.setAttribute("datosnombres", datosnombres);
                 request.setAttribute("datosapellidos", datosapellidos);
@@ -328,6 +330,21 @@ public class Usuariocontrolador extends HttpServlet {
 
                 
                 break;
+                case 10: //Eliminar usuario
+
+                int iddatos1 = Integer.parseInt(request.getParameter("textnumeroid"));
+                DatosPersonalesDAO datos1 = new DatosPersonalesDAO();
+                if (datos1.eliminar(iddatos1)) {
+                    request.setAttribute("mensajeExito", "Se Elimino usuario "
+                            + "correctamente con numero de documento\n" + iddatos1);
+                    request.getRequestDispatcher("verEstudiantes.jsp").forward(request, response);
+
+                } else {
+                    request.setAttribute("mensajeError", "No se Elimino  correctamente el usuario");
+                    request.getRequestDispatcher("verEstudiantes.jsp").forward(request, response);
+                }
+                break;
+                
 
         }
     }

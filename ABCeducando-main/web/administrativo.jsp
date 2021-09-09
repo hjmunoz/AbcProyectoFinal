@@ -79,6 +79,8 @@
                     </div>
                 </div>  
             </div>
+                                                            
+                                                            <%@include file="Componentes/mensajesRespuesta.jsp" %>                
             <%@include file="Componentes/Administrativo/space.jsp" %>
             <%@include file="Componentes/Administrativo/footer.jsp" %>
         </div>

@@ -156,7 +156,7 @@
                                                                 <option value="5">5</option>
                                                             </select>
                                                             <input id="metodo" name="opcion" value="calificar" type="hidden"/>
-                                                            <button type="submit" class="btn-danger" style="padding: 5px; border-radius: 5px;">Calificar</button>
+                                                            <button type="submit" class="btn-primary" style="padding: 5px; border-radius: 5px;">Calificar</button>
                                                         </form>
                                                     </td>                                                                                                             
                                                 </tr>   
@@ -173,7 +173,7 @@
             </div>
         </section>
         <footer>
-            <%@include file="Componentes/docente/footer.jsp" %>>
+            <%@include file="Componentes/docente/footer.jsp" %>
         </footer>
 
     </body>

@@ -164,6 +164,20 @@
                                                     <td class="datatable-ct">
 
                                                         <form id="crudForm"  action="Usuario" method="post">
+                                                            <div style="float: left">
+                                                                <input id="metodo" type="hidden" name="opcion" value="6">
+
+
+                                                                <input type="hidden"  name="textnumeroid" value="<%=datosVO.getIdDatos()%>">
+                                                                <input type="hidden"  name="textnombres" value="<%=datosVO.getDatosnombres()%>">
+                                                                <input type="hidden"  name="textapellidos" value="<%=datosVO.getDatosapellidos()%>">
+                                                                <input type="hidden"  name="texttelefono" value="<%=datosVO.getDatostelefono()%>">
+                                                                <input type="hidden"  name="textemail" value="<%=datosVO.getDatosemail()%>">
+                                                                <button title="Editar"   style="padding: 5px; border-radius: 5px;"><img src="img/editar.png" alt=""/></button>
+                                                            </div>
+                                                        </form> 
+
+                                                        <form id="crudForm"  action="Usuario" method="post">
 
                                                             <input id="metodo" type="hidden" name="opcion" value="5">
 
@@ -173,17 +187,13 @@
                                                             <input type="hidden"  name="textapellidos" value="<%=datosVO.getDatosapellidos()%>">
                                                             <input type="hidden"  name="texttelefono" value="<%=datosVO.getDatostelefono()%>">
                                                             <input type="hidden"  name="textemail" value="<%=datosVO.getDatosemail()%>">
-                                                            <button onclick="crud('6')" class="btn-primary" style="padding: 5px; border-radius: 5px;">Editar</button>
-                                                            <button type="submit" class="btn-danger" style="padding: 5px; border-radius: 5px;" onclick="mostrar()">Eliminar</button>
-                                                            <script>
-                                                                
-                                                                function mostrar(){
-                                                                    alert("Usuario eliminado");
-                                                                }
-                                                                
-                                                            </script>
-                                                        </form>    
-                                                            
+                                                            <button title="Eliminar" type="submit"  style="padding: 5px; border-radius: 5px;" ><img src="img/eliminar (1).png" alt=""/></button>
+
+
+                                                        </form> 
+
+
+
 
 
                                                     </td>
@@ -204,7 +214,7 @@
             <!--=====================================FOOTER===================================-->            
             <%@include file="Componentes/Administrativo/footer.jsp"%>
             <!--=====================================FOOTER===================================-->            
-
+            <script src="assets-2/js/crud/crud.js" type="text/javascript"></script>
         </div>
 
         <!--====================================JS============================================-->

@@ -17,11 +17,21 @@ public class DatosPersonalesVO {
     
     private int idDatos;
 
+    
+
     public DatosPersonalesVO() {
     }
     
      public DatosPersonalesVO(String clave) {
          this.clave = clave;
+    }
+     
+     public DatosPersonalesVO(String datosnombres, String datosapellidos, String datostipoid, String datostelefono, int idDatos) {
+        this.datosnombres = datosnombres;
+        this.datosapellidos = datosapellidos;
+        this.datostipoid = datostipoid;
+        this.datostelefono = datostelefono;
+        this.idDatos = idDatos;
     }
 
     public DatosPersonalesVO(String datosnombres, String datosapellidos, String datostipoid, Integer idDatos, String datostelefono, String datosemail, String datosfechanac,String eps, String clave) {

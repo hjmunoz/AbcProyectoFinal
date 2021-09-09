@@ -172,7 +172,8 @@
                                                 <input type="hidden" name="idAcrividad" value="<%=datosVO.getActividadCargadaId()%>"/>
                                                 <input type="hidden" name="urlArchivo" value="<%=datosVO.getRutaArchivo()%>"/>
                                                 <input id="metodo" name="opcion" type="hidden" value="eliminar"/>                                                
-                                                <button type="submit" class="btn-danger" style="padding: 5px; border-radius: 5px;" title="Eliminar">Eliminar</button>
+                                                <button type="submit"  style="padding: 5px; border-radius: 5px;" title="Eliminar"><img src="img/eliminar (1).png" alt=""/></button>
+                                                
                                             </form>                
                                         </td>
                                                 </tr>   

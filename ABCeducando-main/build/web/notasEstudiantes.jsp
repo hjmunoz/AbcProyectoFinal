@@ -110,7 +110,7 @@
                                             <thead class="text-white" >
                                                 <tr> 
 
-                                                    <th>idActividad</th>
+                                                    <th>Actividad</th>
                                                     <th>calificacion</th>
                                                     <th>Estado</th>
 
@@ -119,17 +119,27 @@
 
                                             <tbody>
                                                 <%
+                                                    int idDocente = 0;
+                                                    
                                                     String idEstudiante = "";
                                                     UsuarioVO usu = new UsuarioVO();
                                                     UsuarioDAO usudao = new UsuarioDAO();
                                                     miSesion.getAttribute("datosUsuario");
                                                     ArrayList<UsuarioVO> datosU = (ArrayList<UsuarioVO>) miSesion.getAttribute("datosUsuario");
 
-                                                    for (int i = 0; i < datosU.size(); i++) {
+                                                    for (int i = 0; i < datosU.size(); i++) {    
                                                         usu = datosU.get(i);
                                                         idEstudiante = usu.getNombre();
                                                     }
-
+                                                    
+                                                    ActividadCargadaVO actividadVO = new ActividadCargadaVO();
+                                                    DocenteDAO docentDAO = new DocenteDAO();
+                                                    ArrayList<ActividadCargadaVO> listaActividad1 = docentDAO.listarActivades(idDocente);
+                                                    for (int i = 0; i < listaActividad1.size(); i++) {
+                                                    actividadVO = listaActividad1.get(i);
+                                                    %>
+                                                    <%}%>
+                                                    <%
                                                     ActividadEntregadaVO datosVO = new ActividadEntregadaVO();
                                                     EstudianteDAO datosDAO = new EstudianteDAO();
                                                     ArrayList< ActividadEntregadaVO> listaActividad = datosDAO.listarNotas(idEstudiante);
@@ -138,7 +148,7 @@
                                                 %>
                                                 <tr>
 
-                                                    <td><%=datosVO.getIdActividadCargada()%></td>
+                                                    <td><a href="<%=datosVO.getActividadEntregadaRuta()%>" target="_blank"><img src="img/pdf.png" title="pdf"/></a></td>
                                                     <td><%=datosVO.getCalificacion()%></td>
                                                     <td><%=datosVO.getActividadEntregadaEstado()%></td>
 

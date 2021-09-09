@@ -209,7 +209,7 @@
 
 
         </section>
-                                                            <%@include file="Componentes/docente/footer.jsp" %>>
+                                                            <%@include file="Componentes/docente/footer.jsp" %>
     </body>
-    <%@include file="Componentes/docente/js.jsp" %>>
+    <%@include file="Componentes/docente/js.jsp" %>
 </html>

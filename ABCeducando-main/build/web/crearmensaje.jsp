@@ -158,7 +158,7 @@ if(request.getAttribute("datosemail")!= null){
                         </div>
                     </div>
                     <div class="card-footer align-content-center">
-                        <button type="submit"  class="btn-primary" style="padding: 5px; border-radius: 5px; margin-bottom: 50px;">Crear mensaje</button>
+                        <button type="submit"  class="btn-primary" style="padding: 5px; border-radius: 5px; margin-bottom: 50px;">Enviar mensaje</button>
                     </div>
                 </div>
             </form>
@@ -199,7 +199,7 @@ if(request.getAttribute("datosemail")!= null){
                                              
                                                 <input type="hidden"  name="idMensaje" value="<%=mensVO.getId_mensaje()%>">
                                                 
-                                                <button type="submit" class="btn-danger" style="padding: 5px; border-radius: 5px;">Eliminar</button>
+                                                <button type="submit" title="Eliminar" style="padding: 5px; border-radius: 5px;"><img src="img/eliminar (1).png" alt=""/></button>
                                                 
                                             </form>
                                         </td>
