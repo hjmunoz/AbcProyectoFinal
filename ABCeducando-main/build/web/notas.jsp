@@ -133,7 +133,7 @@
                                                 </div>
                                                 <div class="sparkline13-graph">
                                                     <div class="datatable-dashv1-list custom-datatable-overright">
-                                                        <table id="table" class="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
+                                                        <table style="border: 1px solid rgba(0,0,0,0.1);" id="table" class="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
                                                data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                                                             <thead>
                                                                 <tr> 

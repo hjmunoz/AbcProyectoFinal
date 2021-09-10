@@ -129,8 +129,8 @@
                                                                         <input name="textfechaingreso" type="date" class="form-control">
                                                                     </div>
                                                                     <div class="form-group">
-                                                                        <label>Fecha salida</label>
-                                                                        <input name="textfechasalida" type="date" class="form-control" placeholder="contraseña">
+<!--                                                                        <label>Fecha salida</label>
+                                                                        <input name="textfechasalida" type="date" class="form-control" placeholder="contraseña">-->
                                                                         <input type="hidden" value="<%=idDatos%>" placeholder="" name="textdocumentoid"><br><br> 
                                                                     </div>  
                                                                     <label>Rol</label>

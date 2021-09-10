@@ -19,7 +19,7 @@
     <body>
          <% 
                                               String estudiante ="";              
-                                           File  reporte = new File(application.getRealPath("ReporteAbc.jasper"));
+                                           File  reporte = new File(application.getRealPath("reporteFinal.jasper"));
                                            Map<String,Object> parametros = new HashMap<String, Object>();
                                            
                                            estudiante = request.getParameter("estudiante");

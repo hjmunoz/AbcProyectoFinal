@@ -44,8 +44,8 @@
                             <h1>Datos Personales</h1><br>
                             <h2><label>Fecha ingreso</label><br></h2>
                             <input type="date" placeholder="" name="textfechaingreso"><br><br>
-                            <h2><label>Fecha salida</label><br></h2>
-                            <input type="date" placeholder="" name="textfechasalida"><br><br>                            
+<!--                            <h2><label>Fecha salida</label><br></h2>
+                            <input type="date" placeholder="" name="textfechasalida"><br><br>                            -->
                             
                             <input type="hidden" value="<%=idDatos%>" placeholder="" name="textdocumentoid"><br><br>   
                              <select class="tipodoc" name="textrol">

@@ -80,8 +80,10 @@
                 </div>  
             </div>
                                                             
+                                                            
                                                             <%@include file="Componentes/mensajesRespuesta.jsp" %>                
             <%@include file="Componentes/Administrativo/space.jsp" %>
+            
             <%@include file="Componentes/Administrativo/footer.jsp" %>
         </div>
         <%@include file="Componentes/Administrativo/js.jsp" %>

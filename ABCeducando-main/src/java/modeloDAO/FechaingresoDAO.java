@@ -57,14 +57,14 @@ public class FechaingresoDAO extends Conexion {
                 
      
             
-             sql = "insert into rolYu(id_rolYu, rol,usuario,fechaingreso, fechasalida) values(?,?,?,?,?)";
+             sql = "insert into rolYu(id_rolYu, rol,usuario,fechaingreso) values(?,?,?,?)";
             
             puente = conexion.prepareStatement(sql);
             puente.setInt(1, datosnuemroid);
             puente.setInt(2, rol);
             puente.setInt(3, datosnuemroid);
             puente.setString(4,fechaingreso);
-            puente.setString(5, fechasalida);
+//            puente.setString(5, fechasalida);
             puente.executeUpdate();
             operacion = true;
             
