@@ -67,7 +67,7 @@
                                                             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="" aria-hidden="true"></i><span class=""></span></a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            
+
                                                             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                                 <span class="educate-icon educate-professor icon-wrap"></span>
                                                                 <span class="admin-name"><%=usu.getNombre()%> <%=usu.getApellidos()%></span>
@@ -94,7 +94,7 @@
                     </div>  
                 </div>            
             </div>
-        </header><br><br>
+        </header><br><br><br>
 
         <%
             int idEstudiante1 = 0;
@@ -115,68 +115,68 @@
         <%} else {%>
 
         <%}%>
-        <div class="col-lg-4"></div>
-        <div class="row">
-            <div class="col-lg-6">
+        <div class="data-table-area mg-b-15">
+            <section class="container-fluid">            
+                <div class="row" style="border: solid 0px;">   
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-9" style="margin-left: 50px; margin-right: 50px;">
+                        <div class="datospersonales">
+                            <div class="card" style="border: solid 0px; background: #ffffff;"> 
+                                <div class="card-body" style="border: solid 0px; padding: 20px; height: 550px;"> 
+                                    <ul id="myTabedu1" class="tab-review-design">
+                                        <li class="active"><a href="">Actualizar usuario</a></li>
+                                    </ul>
+                                    <div class="col-lg-6">
+                                        <form class="" action="Usuario" method="post">   
 
-            </div>
-        </div>
-        <div class="col-lg-2"></div>
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4"></div>
-                <div class="col-xl-4">
-                    <div class="registrodocente">
-                        <h1>Actualizar Usuario</h1>                                          
-                    </div>
-                </div>
-                <div class="col-lg-4"></div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4">
-                </div>
-                <div class="col-xl-4">
-                    <div class="datospersonales">
-                        <div class="col-lg-5"></div>
-                        <div class="col-lg-2">
-                            <form class="container  align-content-center" action="Usuario" method="post">       
-                                <label class="formulario__label" for="numeroDocumento">Numero Documento</label>
-                                <input style="width: 500px;" class="form-control" type="text"  name="textnumeroid" value="<%=usu.getUsuarioid()%>">
-                                <br>
-                                <label>Tipo Documento</label><br>
-                                <select style="width: 500px;" class="form-control" name="texttipoid">
-                                    <option>Seleccione...</option>
-                                    <option value="Registro civil">RC</option>
-                                    <option value="Tarjeta de identidad">TI</option>
-                                    <option value="Cedula de ciudadania">CC</option>
-                                </select><br>
-                                <label class="formulario__label">Nombres</label>
-                                <input style="width: 500px;" class="form-control" type="text"  name="textnombres" value="<%=usu.getNombre()%>" required><br>
-                                <label class="formulario__label" for="apellidos">Apellidos</label>
-                                <input style="width: 500px;" class="form-control" type="text"  name="textapellidos" value="<%=usu.getApellidos()%>" required><br>                            
-                                <label class="formulario__label" >Telefono</label>
-                                <input style="width: 500px;" class="form-control" type="text"  name="texttelefono" value="<%=usu.getTelefono()%>" required>
-                                <input type="hidden"  name="rol" value="<%=usu.getNombrerol()%>" required><br>
-                                <label class="formulario__label">Email</label>
-                                <input style="width: 500px;" class="form-control" type="email"  name="textemail"  value="<%=usu.getEmail()%>" required><br>
-                                <label class="formulario__label">clave</label>
-                                <input style="width: 500px;" class="form-control" type="password"  name="clave"  value="" required><br>
-                                <input value="9" name="opcion" type="hidden"><br>
-                                <div class="row">
-                                    <div class="col-lg-2"></div>
-                                    <div class="col-lg-4">
-                                        <input type="submit" value="Actualizar Usuario"  id="btn" class="btn btn-primary waves-effect waves-light"/>
+                                            <label style="border: solid 0px; width: 500px;" class="formulario__label">Nombres</label>
+                                            <input style="width: 500px;" class="form-control" type="text"  name="textnombres" value="<%=usu.getNombre()%>" required><br>
+
+                                            <label class="form-control" style="border: solid 0px; width: 500px;">Tipo Documento</label>
+                                            <select style="width: 500px;" class="form-control" name="texttipoid">
+                                                <option>Seleccione...</option>
+                                                <option value="Registro civil">RC</option>
+                                                <option value="Tarjeta de identidad">TI</option>
+                                                <option value="Cedula de ciudadania">CC</option>
+                                            </select><br>
+
+                                            <label style="border: solid 0px; width: 500px;" class="formulario__label" >Telefono</label>
+                                            <input style="width: 500px;" class="form-control" type="text"  name="texttelefono" value="<%=usu.getTelefono()%>" required><br>
+
+                                            <label style="border: solid 0px; width: 500px;" class="formulario__label">clave</label>
+                                            <input style="width: 500px;" class="form-control" type="password"  name="clave"  value="" required><br>                                            
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <label style="border: solid 0px; width: 500px;" class="formulario__label" for="apellidos">Apellidos</label>
+                                                <input style="width: 500px;" class="form-control" type="text"  name="textapellidos" value="<%=usu.getApellidos()%>" required><br>
+
+                                                <label style="border: solid 0px; width: 500px;" class="formulario__label" for="numeroDocumento">Numero Documento</label>
+                                                <input style="width: 500px;" class="form-control" type="text"  name="textnumeroid" value="<%=usu.getUsuarioid()%>"><br>
+
+                                                <input type="hidden"  name="rol" value="<%=usu.getNombrerol()%>" required>
+                                                <label style="border: solid 0px; width: 500px;" class="formulario__label">Email</label>
+                                                <input style="width: 500px;" class="form-control" type="email"  name="textemail"  value="<%=usu.getEmail()%>" required><br>
+
+                                                <input value="9" name="opcion" type="hidden">
+                                            </div>
+                                            <div class="row" style="border: solid 0px;">
+                                                <div class="col-lg-10"></div>
+                                                <div class="col-lg-2">
+                                                    <input type="submit" value="Actualizar Usuario"  id="btn" class="btn btn-primary waves-effect waves-light"/>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="col-lg-4"></div>
+                                    <%@include file="Componentes/mensajesRespuesta.jsp" %>
                                 </div>
-                            </form>
+                            </div>
+                            <div class="col-lg-1"></div>
                         </div>
-                        <div class="col-lg-5"></div>
-                        <%@include file="Componentes/mensajesRespuesta.jsp" %>
                     </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
+
         <%}%><br>
         <%@include file="Componentes/Administrativo/footer.jsp"%>
     </body>

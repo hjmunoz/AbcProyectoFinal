@@ -166,6 +166,36 @@ where ActividadEntregadaEstado="calificado" and EstudianteId= $P{nombre};]]>
 			<line>
 				<reportElement x="1" y="59" width="554" height="1" uuid="2c657800-f05e-4347-a01a-eef07690e55a"/>
 			</line>
+			<textField>
+				<reportElement x="1" y="86" width="199" height="27" uuid="8e338398-d535-4a43-aa7e-47b76b99c041"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ActividadCargadaDescripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="86" width="205" height="27" uuid="1b80f50a-662f-4694-b690-228cf066e799"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ActividadEntregadaEstado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="86" width="153" height="27" uuid="3088b7cc-654c-4b1c-90f3-6adf671db6c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Calificacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-1" y="113" width="199" height="27" uuid="5593784c-53eb-455f-a025-627c58659789"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ActividadCargadaDescripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="113" width="205" height="27" uuid="bed4d0cd-46c5-47da-948a-6e406bd8ccd1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ActividadEntregadaEstado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="405" y="113" width="153" height="27" uuid="7a34f439-9811-4724-866b-ac9350378ad7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Calificacion}]]></textFieldExpression>
+			</textField>
 		</band>
 	</detail>
 	<columnFooter>

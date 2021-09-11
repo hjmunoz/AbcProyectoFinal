@@ -102,8 +102,9 @@
                         <div class="hpanel widget-int-shape responsive-mg-b-30">
                             <div class="panel-body">
                                 <div class="text-center content-box">
-                                    <h2 class="m-b-xs">Registrar Matriculas</h2>
-
+                                    <ul id="myTabedu1" class="tab-review-design">
+                                        <li class="active"><a href="">Registrar Matriculas</a></li>
+                                    </ul>
                                     <p class="font-bold text-success"></p>
                                     <div class="m icon-box">
                                         <i class="educate-icon educate-star-half"></i>

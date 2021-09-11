@@ -36,7 +36,6 @@
         <script src="js/data-table/bootstrap-table.js"></script>
         <script src="js/data-table/tableExport.js"></script>
         <script src="js/data-table/data-table-active.js"></script>
-        <script src="js/data-table/bootstrap-table-editable.js"></script>
         <script src="js/data-table/bootstrap-editable.js"></script>
         <script src="js/data-table/bootstrap-table-resizable.js"></script>
         <script src="js/data-table/colResizable-1.5.source.js"></script>

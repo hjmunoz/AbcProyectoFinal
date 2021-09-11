@@ -19,7 +19,9 @@
 
     <body>        
         <!--===========================================BARRA DE NAVEGACION=========================================-->
-        <%@include file="Componentes/Administrativo/navadmin.jsp" %>
+        <div> 
+        <%@include file="Componentes/Administrativo/navadmin.jsp"%>
+        </div>
         <!--===========================================BARRA DE NAVEGACION=========================================-->
 
         <div class="all-content-wrapper">
@@ -111,20 +113,20 @@
                         </div>
                     </div>
                 </div>                               
-            </div>
+            </div><br><br><br>
             <!--===============================================PERFIL================================================-->
 
             <!--================================ TABLA =======================================-->
-            <div class="data-table-area mg-b-15" style="margin-top: 50px">
+            <div class="data-table-area mg-b-15">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                             <div class="sparkline13-list">
                                 <div class="sparkline13-hd">
-                                    <div class="main-sparkline13-hd">
-                                        <h1>Docentes</h1>
-                                    </div>
+                                    <ul id="myTabedu1" class="tab-review-design">
+                                        <li class="active"><a href="">Docente</a></li>
+                                    </ul>
                                 </div>
                                 <div class="sparkline13-graph">
                                     <div class="datatable-dashv1-list custom-datatable-overright">
@@ -160,7 +162,7 @@
                                                     <td><%=datosVO.getDatosapellidos()%></td>
                                                     <td><%=datosVO.getDatostelefono()%></td>
                                                     <td><%=datosVO.getDatosemail()%></td>
-                                                    <td><%=datosVO.getEps()%></td>                                                    
+                                                    <td><%=datosVO.getEps()%></td>   
                                                     <td class="datatable-ct">
 
                                                         <form id="crudForm"  action="Usuario" method="post">

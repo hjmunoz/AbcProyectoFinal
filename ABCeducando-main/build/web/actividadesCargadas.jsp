@@ -112,7 +112,7 @@
                         </div>
                     </div>
                 </div>                               
-            </div>
+            </div><br><br><br>
             <!--===============================================PERFIL================================================-->
 
             <!--================================ TABLA =======================================-->
@@ -123,19 +123,16 @@
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                             <div class="sparkline13-list">
                                 <div class="sparkline13-hd">
-                                    <div class="main-sparkline13-hd">
-                                        <h1>Actividades Cargadas</h1>
-                                    </div>
+                                    <ul id="myTabedu1" class="tab-review-design">
+                                        <li class="active"><a href="">Actividades cargadas</a></li>
+                                    </ul>
                                 </div>
                                 <div class="sparkline13-graph">
                                     <div class="datatable-dashv1-list custom-datatable-overright">
-
-                                        
-                                        <table style="border: 1px solid rgba(0,0,0,0.1);" id="table" class="table table-striped" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
-                                               data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
-                                            <thead>
+                                        <table style="border: 2px solid rgba(0,0,0,0.1);" id="table" class="table table-bordered" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
+                                           data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
+                                            <thead style="font-size: 20px;">
                                                 <tr>
-                                                    <th data-field="state" data-checkbox="true"></th>
                                                     <th data-field="id">Nombre</th>
                                                     <th data-field="name" data-editable="true">Descripción</th>
                                                     <th data-field="email" data-editable="true">Archivo</th>
@@ -144,39 +141,31 @@
                                             </thead>
                                             <tbody>
                                                 <%
-                                        int idDocente = 0;
-                                        
-                                    miSesion.getAttribute("datosUsuario");
-                                    
-                                    
-                                      for (int i = 0; i < datosU.size(); i++) {
-                                              usu = datosU.get(i);
-                                              idDocente = usu.getUsuarioid();
-                                      }
-                                        
-                                        ActividadCargadaVO datosVO = new ActividadCargadaVO();
-                                       DocenteDAO datosDAO = new DocenteDAO();
-                                        ArrayList<ActividadCargadaVO> listaActividad = datosDAO.listarActivades(idDocente);
-                                        for (int i = 0; i < listaActividad.size(); i++) {
-                                            datosVO = listaActividad.get(i);
-                                    %>
+                                                    int idDocente = 0;
+                                                    miSesion.getAttribute("datosUsuario");
+                                                    for (int i = 0; i < datosU.size(); i++) {
+                                                        usu = datosU.get(i);
+                                                        idDocente = usu.getUsuarioid();
+                                                    }
+                                                    ActividadCargadaVO datosVO = new ActividadCargadaVO();
+                                                    DocenteDAO datosDAO = new DocenteDAO();
+                                                    ArrayList<ActividadCargadaVO> listaActividad = datosDAO.listarActivades(idDocente);
+                                                    for (int i = 0; i < listaActividad.size(); i++) {
+                                                        datosVO = listaActividad.get(i);
+                                                %>
                                                 <tr>
-                                                    <td></td>
-                                                    
-                                                    <td><%=datosVO.getActividadCargadaNombre()%></td>
-                                                    <td><%=datosVO.getActividadCargadaDescripcion()%></td>
-                                                    <td>                                                        
-                                                        <a href="<%=datosVO.getRutaArchivo()%>" target="_blank"><img src="img/pdf.png" title="pdf"/></a>                                                                                                  
+                                                    <td style="vertical-align: middle"><%=datosVO.getActividadCargadaNombre()%></td>
+                                                    <td style="vertical-align: middle"><%=datosVO.getActividadCargadaDescripcion()%></td>
+                                                    <td style="vertical-align: middle">                                                        
+                                                        <a href="<%=datosVO.getRutaArchivo()%>" target="_blank"><img src="img/pdf.png" title="pdf"/></a>                                                         
                                                     <td>
-                                                        
-                                            <form id="crudForm"  action="Docente" method="post">                                                                                                
-                                                <input type="hidden" name="idAcrividad" value="<%=datosVO.getActividadCargadaId()%>"/>
-                                                <input type="hidden" name="urlArchivo" value="<%=datosVO.getRutaArchivo()%>"/>
-                                                <input id="metodo" name="opcion" type="hidden" value="eliminar"/>                                                
-                                                <button type="submit"  style="padding: 5px; border-radius: 5px;" title="Eliminar"><img src="img/eliminar (1).png" alt=""/></button>
-                                                
-                                            </form>                
-                                        </td>
+                                                        <form id="crudForm"  action="Docente" method="post">                                                                                                
+                                                            <input type="hidden" name="idAcrividad" value="<%=datosVO.getActividadCargadaId()%>"/>
+                                                            <input type="hidden" name="urlArchivo" value="<%=datosVO.getRutaArchivo()%>"/>
+                                                            <input id="metodo" name="opcion" type="hidden" value="eliminar"/>                                                
+                                                            <button type="submit"  style="padding: 5px; border-radius: 5px;" title="Eliminar"><img src="img/eliminar (1).png" alt=""/></button>
+                                                        </form>                
+                                                    </td>
                                                 </tr>   
                                                 <%}%>
                                             </tbody>
@@ -193,7 +182,7 @@
 
             <!--=====================================FOOTER===================================-->            
             <%@include file="Componentes/docente/footer.jsp"%>
-            <!--=====================================FOOTER===================================-->            
+            <!--=====================================FOOTER===================================-->  
 
         </div>
 

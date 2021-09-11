@@ -107,24 +107,24 @@
                         </div>
                     </div>
                 </div>                               
-            </div>
+            </div><br><br><br>
             <!--===============================================PERFIL================================================-->
 
             <!--================================ TABLA =======================================-->
-            <div class="data-table-area mg-b-15" style="margin-top: 50px">
+            <div class="data-table-area mg-b-15">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                             <div class="sparkline13-list">
                                 <div class="sparkline13-hd">
-                                    <div class="main-sparkline13-hd">
-                                        <h1>Estudiantes</h1>
-                                    </div>
+                                    <ul id="myTabedu1" class="tab-review-design">
+                                        <li class="active"><a href="">Estudiantes</a></li>
+                                    </ul>
                                 </div>
                                 <div class="sparkline13-graph">
                                     <div class="datatable-dashv1-list custom-datatable-overright">
-                                        <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
+                                        <table class="table table-striped" id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
                                                data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                                             <thead>
                                                 <tr>
@@ -156,14 +156,14 @@
                                                     <td class="datatable-ct">
                                                         <form id="crudForm"  action="Usuario" method="post">
                                                             <div style="float: left">
-                                                            <input id="metodo" type="hidden" name="opcion" value="6">
-                                                            <input type="hidden"  name="textnumeroid" value="<%=datosVO.getIdDatos()%>">
-                                                            <input type="hidden"  name="textnombres" value="<%=datosVO.getDatosnombres()%>">
-                                                            <input type="hidden"  name="textapellidos" value="<%=datosVO.getDatosapellidos()%>">
-                                                            <input type="hidden"  name="texttelefono" value="<%=datosVO.getDatostelefono()%>">
-                                                            <input type="hidden"  name="textemail" value="<%=datosVO.getDatosemail()%>">
-                                                            <input type="hidden"  name="clave" value="<%=datosVO.getClave()%>">
-                                                            <button title="Editar" type="submit"  style="padding: 5px; border-radius: 5px;"><img src="img/editar.png" alt=""/></button>
+                                                                <input id="metodo" type="hidden" name="opcion" value="6">
+                                                                <input type="hidden"  name="textnumeroid" value="<%=datosVO.getIdDatos()%>">
+                                                                <input type="hidden"  name="textnombres" value="<%=datosVO.getDatosnombres()%>">
+                                                                <input type="hidden"  name="textapellidos" value="<%=datosVO.getDatosapellidos()%>">
+                                                                <input type="hidden"  name="texttelefono" value="<%=datosVO.getDatostelefono()%>">
+                                                                <input type="hidden"  name="textemail" value="<%=datosVO.getDatosemail()%>">
+                                                                <input type="hidden"  name="clave" value="<%=datosVO.getClave()%>">
+                                                                <button title="Editar" type="submit"  style="padding: 5px; border-radius: 5px;"><img src="img/editar.png" alt=""/></button>
                                                             </div>
 <!--                                                            <a class="btn btn-primary" href="Usuario?opcion=6&textnumeroid=<%=datosVO.getIdDatos()%>">Editar</a>-->
                                                         </form>

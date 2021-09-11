@@ -100,7 +100,7 @@
                                             <div class="col-xl-12">
                                                 <div class="registrodocente">
                                                     <h1>Cargar actividad</h1>                                          
-                                                </div>
+                                                </div>                                                
                                             </div>
                                         </div>
                                         
