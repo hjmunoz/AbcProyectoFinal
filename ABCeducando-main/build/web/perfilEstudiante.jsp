@@ -93,7 +93,7 @@
                     </div>  
                 </div>            
             </div>
-        </header><br><br>
+        </header><br><br><br>
 
         <%
             int idEstudiante1 = 0;
@@ -115,51 +115,57 @@
 
         <%}%>
         <div class="data-table-area mg-b-15">
-            <section class="container-fluid">            
-                <div class="row">                
-                    <div class="col-lg-12" style="margin-left: 50px; margin-right: 50px;">
-                        <div class="col-lg-7" style="padding-left: 220px">
-                            <div class="card" style="background: #ffffff;">
-                                <div class="card-body" style="border: solid 0px; padding: 40px; height: 600px;">
-                                    <ul id="myTabedu1" class="tab-review-design">
-                                        <li class="active"><a href="">Mi perfil</a></li>
-                                    </ul>
-                                    <form class="container  align-content-center" action="Usuario" method="post">       
-                                        <label class="formulario__label" for="numeroDocumento">Numero Documento</label>
-                                        <label style="width: 500px;" class="form-control"><%=usu.getUsuarioid()%></label>                                                          
-                                        <label class="formulario__label">Nombres</label>
-                                        <label style="width: 500px;" class="form-control"><%=usu.getNombre()%></label>
-                                        <label class="formulario__label" for="apellidos">Apellidos</label>
-                                        <label style="width: 500px;" class="form-control"><%=usu.getApellidos()%></label>
-                                        <label class="formulario__label" >Teléfono</label>
-                                        <label style="width: 500px;" class="form-control"><%=usu.getTelefono()%></label>
-                                        <input type="hidden"  name="rol" value="<%=usu.getNombrerol()%>" required>
-                                        <label class="formulario__label">Email</label>
-                                        <label style="width: 500px;" class="form-control"><%=usu.getEmail()%></label>
-                                        <input value="9" name="opcion" type="hidden"><br>
-                                        <div class="row">
-                                            <div class="col-lg-2"></div>                                    
-                                            <div class="col-lg-4"></div>
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10" style="margin-left: 250px ">
+                        <div class="card" style="border: solid 0px; padding: 50px; margin-left: 50px; background: #ffffff;">
+                            <div class="data-table-area mg-b-15">
+                                <section class="container-fluid">            
+                                    <div class="row">                
+                                        <div class="col-lg-12" style="margin-left: 50px; margin-right: 50px;">
+                                            <div class="col-lg-7" style="padding-left: 100px">
+                                                <div class="card" style="background: #ffffff;">
+                                                    <div class="card-body" style="border: solid 0px; padding: 40px; height: 600px; border: solid 0px;">
+                                                        <ul id="myTabedu1" class="tab-review-design">
+                                                            <li class="active"><a href="">Mi perfil</a></li>
+                                                        </ul>
+                                                        <form class="container  align-content-center" action="Usuario" method="post">       
+                                                            <label class="formulario__label" for="numeroDocumento">Numero Documento</label>
+                                                            <label style="width: 500px;" class="form-control"><%=usu.getUsuarioid()%></label>                                                          
+                                                            <label class="formulario__label">Nombres</label>
+                                                            <label style="width: 500px;" class="form-control"><%=usu.getNombre()%></label>
+                                                            <label class="formulario__label" for="apellidos">Apellidos</label>
+                                                            <label style="width: 500px;" class="form-control"><%=usu.getApellidos()%></label>
+                                                            <label class="formulario__label" >Teléfono</label>
+                                                            <label style="width: 500px;" class="form-control"><%=usu.getTelefono()%></label>
+                                                            <input type="hidden"  name="rol" value="<%=usu.getNombrerol()%>" required>
+                                                            <label class="formulario__label">Email</label>
+                                                            <label style="width: 500px;" class="form-control"><%=usu.getEmail()%></label>
+                                                            <input value="9" name="opcion" type="hidden"><br>
+                                                            <div class="row">
+                                                                <div class="col-lg-2"></div>                                    
+                                                                <div class="col-lg-4"></div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="card" style="background: #ffffff; ">
+                                                    <div class="card-body" style="padding: 50px; height: 600px;" >
+                                                        <img src="img/leer.png" style="height: 500px; width: 500px;  background: #ffffff; border: solid 0px;" alt=""/>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card" style="background: #ffffff">
-                                <div class="card-body" style="padding: 50px; height: 600px;" >
-                                    <img src="img/leer.png" alt=""/>
-                                </div>
+                                        <%@include file="Componentes/mensajesRespuesta.jsp" %>
+                                    </div>                                    
                             </div>
                         </div>
                     </div>
-                    <%@include file="Componentes/mensajesRespuesta.jsp" %>
-                </div>
-        </div>
-    </div>
-</section>
-<%}%><br>
-<%@include file="Componentes/Administrativo/footer.jsp"%>
-</body>
-<%@include file="Componentes/Administrativo/js.jsp" %>
-</html>
+            </section>
+            <%}%><br>
+            <%@include file="Componentes/Administrativo/footer.jsp"%>
+            </body>
+            <%@include file="Componentes/Administrativo/js.jsp" %>
+            </html>

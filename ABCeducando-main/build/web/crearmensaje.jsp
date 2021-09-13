@@ -121,54 +121,56 @@
                         }
                     %>
 
-                    <form  class="" method="post" action="Mensajes">
-                        <div class="card " style=" width: 100%; height: 60%; border: solid 0px; padding: 50px; background: #ffffff;">
-                            <div class="card-header">
-                                <ul id="myTabedu1" class="tab-review-design">
-                                    <li class="active"><a href="">Crear mensaje</a></li>
-                                </ul>
-                            </div>
-                            <div class="card-body">
+                    <div class="card" style="border: solid 0px; height: 800px; background: #ffffff;">
+                        <form  class="" method="post" action="Mensajes">
+                            <div class="card " style=" width: 100%; height: 60%; border: solid 0px; padding: 50px; background: #ffffff;">
+                                <div class="card-header">
+                                    <ul id="myTabedu1" class="tab-review-design">
+                                        <li class="active"><a href="">Crear mensaje</a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
 
-                                <div class="">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <label class="text-bold font-italic">Destino</label>
-                                            <input 
-                                                type="email"  placeholder="Escriba correo destino" class="form-control " style="font-size: 15px;" name="receptor"
-                                                title="Email incorrecto revise su formato" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required value="<%=datosemail%>" />
-                                        </div>
-                                        <input id="metodo" type="hidden" name="opcion" value="1" >
-                                        <div class="col-lg-6">
-                                            <label class="text-bold font-italic">Asunto</label>
-                                            <input 
-                                                type="text"   class="form-control" style="font-size: 15px;" placeholder="Escriba un asunto" name="asunto"
-                                                placeholder="Escriba Aqui su asunto" pattern="^.{1,25}$" title="El asunto es requerido y no puede pasar los 25 caracteres" required />
-                                        </div>
-                                    </div><br>
-                                    <div class="row">
+                                    <div class="">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <label class="text-bold font-italic">Destino</label>
+                                                <input 
+                                                    type="email"  placeholder="Escriba correo destino" class="form-control " style="font-size: 15px;" name="receptor"
+                                                    title="Email incorrecto revise su formato" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required value="<%=datosemail%>" />
+                                            </div>
+                                            <input id="metodo" type="hidden" name="opcion" value="1" >
+                                            <div class="col-lg-6">
+                                                <label class="text-bold font-italic">Asunto</label>
+                                                <input 
+                                                    type="text"   class="form-control" style="font-size: 15px;" placeholder="Escriba un asunto" name="asunto"
+                                                    placeholder="Escriba Aqui su asunto" pattern="^.{1,25}$" title="El asunto es requerido y no puede pasar los 25 caracteres" required />
+                                            </div>
+                                        </div><br>
+                                        <div class="row">
 
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <label class="text-bold font-italic">mensaje</label>
-                                                <textarea 
-                                                    class="form-control" placeholder="Escriba su mensaje aqui" name="contenido"
-                                                    rows="3"  data-pattern="^.{2,255}$" title="Tu comentario no debe pasar los 255 caracteres" required ><%=mensaje%> </textarea>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label class="text-bold font-italic">mensaje</label>
+                                                    <textarea 
+                                                        class="form-control" placeholder="Escriba su mensaje aqui" name="contenido"
+                                                        rows="3"  data-pattern="^.{2,255}$" title="Tu comentario no debe pasar los 255 caracteres" required ><%=mensaje%> </textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10"></div>
+                                        <div class="col-lg-2">
+                                            <div class="card-footer align-content-center">
+                                                <button type="submit"  class="btn-primary" style="padding: 5px; border-radius: 5px; margin-bottom: 50px;">Enviar mensaje</button>
                                             </div>
                                         </div>
                                     </div>
-                                            <div class="col-lg-10"></div>
-                                            <div class="col-lg-2">
-                                        <div class="card-footer align-content-center">
-                                            <button type="submit"  class="btn-primary" style="padding: 5px; border-radius: 5px; margin-bottom: 50px;">Enviar mensaje</button>
-                                        </div>
-                                    </div>
+
                                 </div>
-                                </form>
-                            </div>
-                        </div><br>
+                            </div><br>
+                        </form>
                         <div class="col-lg-12">
                             <div class="card" style="border: solid 0px; padding: 50px; background: #ffffff;">
                                 <table class="table table-bordered">
@@ -210,6 +212,7 @@
                                 </table>
                             </div>
                         </div>
+                    </div>
 
                 </div>
                 <script>

@@ -107,44 +107,51 @@
 
         <%}%>       
         <div class="data-table-area mg-b-15">
-            <section class="container-fluid">            
-                <div class="row">                
-                    <div class="col-lg-12" style="margin-left: 50px; margin-right: 50px;">
-                            <div class="col-lg-7" style="padding-left: 220px">
-                                <div class="card" style="background: #ffffff;">
-                                    <div class="card-body" style="border: solid 0px; padding: 40px; height: 600px;">
-                                        <ul id="myTabedu1" class="tab-review-design">
-                                            <li class="active"><a href="">Mi perfil</a></li>
-                                        </ul>
-                                        <form class="" action="Usuario" method="post">  
-                                            <div class="">
-                                                <label class="formulario__label" for="numeroDocumento">Numero Documento</label>
-                                                <label style="vertical-align: middle;"  class="form-control"><%=usu.getUsuarioid()%></label>                                                          
-                                                <label class="formulario__label">Nombres</label>
-                                                <label  class="form-control"><%=usu.getNombre()%></label>
-                                                <label class="formulario__label" for="apellidos">Apellidos</label>
-                                                <label  class="form-control"><%=usu.getApellidos()%></label>
-                                                <label class="formulario__label" >Teléfono</label>
-                                                <label  class="form-control"><%=usu.getTelefono()%></label>
-                                                <input type="hidden"  name="rol" value="<%=usu.getNombrerol()%>" required>
-                                                <label class="formulario__label">Email</label>
-                                                <label  class="form-control"><%=usu.getEmail()%></label>
-                                                <input value="9" name="opcion" type="hidden"><br>      
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10" style="margin-left: 250px ">
+                        <div class="card" style="border: solid 0px;padding: 50px; margin-left: 50px; background: #ffffff;">
+                            <div class="card-body">
+                                <div class="row">                
+                                        <div class="col-lg-7" style="padding-left: 100px">
+                                            <div class="card" style="background: #ffffff;">
+                                                <div class="card-body" style="border: solid 0px; padding: 40px; height: 600px;">
+                                                    <ul id="myTabedu1" class="tab-review-design">
+                                                        <li class="active"><a href="">Mi perfil</a></li>
+                                                    </ul>
+                                                    <form class="" action="Usuario" method="post">  
+                                                        <div class="">
+                                                            <label class="formulario__label" for="numeroDocumento">Numero Documento</label>
+                                                            <label style="vertical-align: middle;"  class="form-control"><%=usu.getUsuarioid()%></label>                                                          
+                                                            <label class="formulario__label">Nombres</label>
+                                                            <label  class="form-control"><%=usu.getNombre()%></label>
+                                                            <label class="formulario__label" for="apellidos">Apellidos</label>
+                                                            <label  class="form-control"><%=usu.getApellidos()%></label>
+                                                            <label class="formulario__label" >Teléfono</label>
+                                                            <label  class="form-control"><%=usu.getTelefono()%></label>
+                                                            <input type="hidden"  name="rol" value="<%=usu.getNombrerol()%>" required>
+                                                            <label class="formulario__label">Email</label>
+                                                            <label  class="form-control"><%=usu.getEmail()%></label>
+                                                            <input value="9" name="opcion" type="hidden"><br>      
+                                                        </div>
+                                                    </form>
+                                                </div>
                                             </div>
-                                        </form>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="card" style="background: #ffffff;  border: solid 0px;">
+                                                <div  class="card-body" style="padding: 50px; height: 600px; " >
+                                                    <img src="img/trabajador.png" style="height: 500px; width: 500px;  background: #ffffff; border: solid 0px;" alt=""/>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        <div class="col-lg-4">
-                            <div class="card" style="background: #ffffff">
-                                <div class="card-body" style="padding: 50px; height: 600px;" >
-                                    <img src="img/trabajador.png" alt=""/>
+                                    <%@include file="Componentes/mensajesRespuesta.jsp" %>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <%@include file="Componentes/mensajesRespuesta.jsp" %>
-                </div>
+                </div> 
             </section>
         </div>
         <%}%><br>
