@@ -45,6 +45,7 @@ public class Docentecontrolador extends HttpServlet {
 
         String opcion = request.getParameter("opcion");
         
+        
 
 
         
